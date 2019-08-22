@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Lesson</title>
+</head>
+<body>
+    <a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
+    <!-- Menu bar -->
+    <div id="myTopnav" class="topnav" > 
+        <a href="index.html" class="active">Home</a>
+        <a href="#" onclick="openside()">Lesson</a>
+        <a href="#aboutMe">About</a>
+        <a href="#myCertificates">Certificates</a>
+        <a href="#material-page">Material</a>
+        <a href="#contact">Contact</a>
+        <a href="photos.html">Photos</a>
+        <a href="javascript:void;" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Side bar -->
+    <div id="mySidenav" class="sidenav" >
+        <a href="#" class="closebtn" onclick="closeside()">&times;</a>
+        <p>Lesson</p>
+        <a href="#">Level 1</a>
+        <a href="#">Level 2</a>
+        <a href="#">Level 3</a>
+    </div>
+
+    <div id="videos">
+            <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/E6-oQvH6iY8"></iframe>
+    
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/osqtBtEtxKg" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/h1bzE3zixVU" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/OUHm-bcrKpI" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/6PWZjyRa3C4" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/UvA-iOlI-9E" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/aNWWEIL2_wk" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/hqgOye1JOaY" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/Nl4-OAjUTEM" 
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/CgaegYNA3pQ" 
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/0hXKCGvhA68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    <script>
+        // menu bar responsive 
+        function myFunction() {
+            let x = document.getElementById("myTopnav"); 
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav"; 
+            }
+        }
+
+        // open side bar 
+        function openside() {
+            document.getElementById("mySidenav").style.width = "250px"; 
+            document.body.style.marginLeft = "250px";
+        }
+
+        // close side bar 
+        function closeside() {
+            document.getElementById("mySidenav").style.width = "0"; 
+            document.body.style.marginLeft = "0";
+        }
+    </script>
+    <footer>
+        <div class="footer-contact">
+            <p id="phone">cell phone (778) 751-4211</p>
+            <p id="copyright">&copy 2019 created by Syllinda Cardoso</p>
+        </div>
+    </footer>
+</body>
+</html>
