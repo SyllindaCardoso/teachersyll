@@ -1,6 +1,7 @@
 body {
     margin: 0;
     transition: margin-left .5s; 
+    color: rgb(58, 1, 58); 
 }
 
 html, body {
@@ -170,6 +171,8 @@ html, body {
     position: relative;
 }
 #intro {
+    background-size: cover;
+    color: rgb(58, 1, 58);  
     width:100%;
     height:auto;
     position:relative;
