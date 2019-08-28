@@ -163,15 +163,18 @@ html, body {
     height: auto;
 } */
 
-#myPhoto {
-    /* background:url("photo.jpg") no-repeat center center fixed;  */
+#about {
+    background: url("./CanadaPlace.jpg") no-repeat center center fixed; 
     background-size: cover; 
     width: 100%; 
-    height: auto;
+    height: 800px;
+    margin-top: 0px; 
     position: relative;
+    z-index: -1;
 }
 #intro {
     background-size: cover;
+    background-color: white; 
     color: rgb(58, 1, 58);  
     width:100%;
     height:auto;
