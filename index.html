@@ -37,15 +37,7 @@
 
     <!------------- Main page  -------->
     <div id="container">
-        <div id="about">
-            <!-- <a href="#about">
-                <img id="myPhoto" src="images/photo.jpg" alt="my photo">
-            </a> -->
-            
-            <!-- <map name="image-map">
-                <area target="_blank">
-            </map> -->
-        </div>
+        <div id="about"></div>
 
         <div id="intro">
             <h1 id="name">Hi. My name is Syllinda!
@@ -98,38 +90,19 @@
     </div>
 
     <!-- contact page -->
-    <div id="contact-page">
-        <h1 id="contact-heading">Contact</h1>
-        <br>
+    <div id="contact-page"></div>
+    <div id="contact-wrapper"> 
+        <form name="myform" method="post" action="https://formspree.io/syllinda@gmail.com" autocomplete="on">
+            <h1 id="contact-heading">Contact</h1>
+            <input type="text" name="name" id="name" 
+                placeholder="Full Name" required> <br>
+            <input type="email" name="email" id="email" size="40"
+                placeholder="Your e-mail address" required> <br>
+            <textarea id="message" name="message" rows="10" cols="40" maxlength="400"
+                placeholder="Enter your message"></textarea>
+            <input type="submit" value="Send">
+        </form>
     </div>
-    <form name="myform" method="post" action="mailto:syllinda@gmail.com">
-        <fieldset>
-            <div id="contact-form">
-                <div class="contact-element">
-                    <label for="name" class="adjust">Name</label>
-                    <input type="text" id="name" name="name"/>
-                    <div id="DName" style="font-size: 10px; color: red; "></div> 
-                </div>
-                <div class="contact-element">
-                    <label for="email" class="adjust" >Email</label>
-                    <input type="text" name="email">
-                    <div id="DEmail" style="font-size: 10px; color: red; "></div>
-                </div>
-                <div class="contact-element">
-                    <label for="subject" class="adjust">Subject</label>
-                    <input type="text" id="subject" name="subject"> 
-                    <div id="DSubject" style="font-size: 10px; color: red; "></div>
-                </div> 
-                <div class="contact-element">
-                    <label for="message" class="adjust">Message</label>
-                    <textarea rows="1" cols="50" id="message" name="message"></textarea>
-                    <div id="DMessage" style="font-size: 10px; color: red; "></div>  
-                </div>
-            </div>
-            <input class="submit" type="submit" value="Submit" onclick="validateForm()"> 
-            <div id="DOK" style="font-size: 10px; color: red; "></div>       
-        </fieldset>
-    </form>
 
     <script>
         // menu bar responsive 
@@ -152,59 +125,6 @@
         function closeside() {
             document.getElementById("mySidenav").style.width = "0"; 
             document.body.style.marginLeft = "0";
-        }
-        
-        // contact validate form
-        function validateForm() {
-            // name 
-            if (document.myform.name.value == "") {
-                document.getElementById("DName").innerHTML = "Please enter your name!"; 
-                document.myform.name.focus(); 
-                return false; 
-            } else {
-                document.getElementById("DName").innerHTML= ""; 
-            }
-
-            // email 
-            if (document.myform.email.value == "") {
-                document.getElementById("DEmail").innerHTML= "Please enter a valid email!";
-                document.myform.email.focus(); 
-                return false; 
-            } else if (validateEmail()) {
-                document.getElementById("DEmail").innerHTML = "Please enter a correct email address!"; 
-                document.myform.email.focus(); 
-                return false; 
-            } else {
-                document.getElementById("DEmail").innerHTML = ""; 
-            }
-
-            function validateEmail() {
-                var emailID = document.myform.email.value;
-                let AtPos = emailID.indexOf('@'); 
-                let DotPos = emailID.lastIndexOf('.'); 
-                if (AtPos < 1 || (DotPos - AtPos > 2)) {
-                    return false; 
-                }
-                return true; 
-            }
-
-            // subject 
-            if (document.myform.subject.value == "") {
-                document.getElementById("DSubject").innerHTML = "Please enter a subject! "; 
-                document.myform.subject.focus(); 
-                return false; 
-            } else {
-                document.getElementById("DSubject").innerHTML = ""; 
-            }
-
-            // message 
-            if (document.myform.message.value == "") {
-                document.getElementById("DMessage").innerHTML = "Please enter a message! "; 
-                document.myform.message.focus(); 
-                return false; 
-            } else {
-                document.getElementById("DMessage").innerHTML = ""; 
-            }
         }
     </script>
     <footer>

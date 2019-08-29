@@ -16,26 +16,6 @@ html, body {
 }
 
 /* --------- Menu bar ----------- */
-/* .topnav {
-    overflow: hidden; 
-    background: -webkit-linear-gradient(gray, white, gray); 
-    color: rgb(58, 1, 58);
-}
-
-.topnav a {
-    float: left;
-    display: block; 
-    color: rgb(58, 1, 58); 
-    text-align: center; 
-    padding: 14px 16px; 
-    text-decoration: none; 
-    font-size: 20px; 
-}
-
-.topnav a:hover {
-    background-color: lightgrey; 
-    color: rgb(58, 1, 58); 
-} */
 
 .topnav {
     display: flex;
@@ -142,26 +122,6 @@ html, body {
 }
 
 /* ------------- main page ------------ */
-/* #container {
-    display: grid; 
-    grid-template-columns: 300px 300px; 
-    grid-template-rows: 300px; 
-    grid-gap: 15px; 
-    margin-top: 50px; 
-    margin-left: 200px; 
-    margin-right: 200px; 
-    justify-content: center; 
-} */
-
-/* #myPhoto {
-    width: 300px; 
-    height: auto;
-} */
-
-/* #myPhoto {
-    width: 100%; 
-    height: auto;
-} */
 
 #about {
     background: url("./CanadaPlace.jpg") no-repeat center center fixed; 
@@ -261,57 +221,34 @@ html, body {
 }
 
 /* ------------- contact -------------- */
-#contact-heading {
-    text-align: center;
-    margin-top: 80px; 
-}
-form{
-    display: flex;
-    margin: auto;
-    width: 80%;
-    height: 637px;
-    top: 150px;
-    text-align: center; 
-}
-
-fieldset{
-    background-color: rgba(209, 205, 205, 0.959);
-    font-size: 21px; 
-    color: rgb(58, 1, 58);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-input{
+input {
     margin: 15px; 
     height: 50px;
-    width:770px;
     font-size: 21px; 
+    width: 100%;
 }
 
-textarea{
-    margin: 15px; 
-    height: 200px; 
-    width: 770px;
+textarea {
+    font-size: 21px; 
+    width: 100%; 
+    margin: 15px;
 }
 
-input[type='submit'] {
+input[type=submit] {
+    width: 100%; 
+    font-size: 20px; 
+    cursor: pointer; 
+    margin: 15px;
+}
+
+#contact-wrapper {
+    display: flex; 
+    margin-left: auto;
     text-align: center; 
-    font-size: 50px;
-    font-family: 'EB Garamond', serif;
-    width: 70px; 
-    height: auto;
-    margin: 15px 0px 0px 70px;
+    padding: 20px; 
+    width: 70%; 
 }
 
-/* .submit {
-    font-size: 50px; 
-} */
-.adjust{
-    width:7em;
-    display:inline-block;
-    margin: 20px 0px 0px 30px;
-    vertical-align: top; 
-}
 /* ------------- footer --------------- */
 footer {
     text-align: center; 
@@ -327,6 +264,7 @@ footer {
     margin-left: 50px; 
     margin-top: 20px; 
 }
+
 /* ------------- photos page --------------- */
 #photos {
     padding: 75px; 
@@ -334,6 +272,7 @@ footer {
     color: rgb(58, 1, 58);
     /* overflow: hidden; */
 }
+
 .main-photos-wrapper {
     display: grid; 
     grid-template-columns: auto auto auto auto;
