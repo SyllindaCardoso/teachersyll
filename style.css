@@ -179,12 +179,12 @@ html, body {
     margin-top: 80px; 
 }
 
-.pic {
+.cert {
     width: 250px; 
     height: auto;
 }
 
-.picbig {
+/* .picbig {
     position: absolute; 
     width: 0px; 
     -webkit-transition: width 0.3s linear 0s; 
@@ -195,7 +195,7 @@ html, body {
 .pic:hover + .picbig {
     width: 600px; 
     text-align: center; 
-}
+} */
 
 /* ------------- material ------------ */
 #material-heading {
