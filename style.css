@@ -249,6 +249,10 @@ input[type=submit] {
     width: 70%; 
 }
 
+@media screen and (max-width:600px) {
+    #contact-wrapper {position: relative;}
+}
+
 /* ------------- footer --------------- */
 footer {
     text-align: center; 
@@ -265,12 +269,15 @@ footer {
     margin-top: 20px; 
 }
 
+@media screen and (max-width:850px) {
+    #videos {display: block; }
+}
+
 /* ------------- photos page --------------- */
 #photos {
-    padding: 75px; 
+    padding: 15px; 
     font-family: 'Farsan', cursive;
     color: rgb(58, 1, 58);
-    /* overflow: hidden; */
 }
 
 .main-photos-wrapper {
@@ -279,9 +286,16 @@ footer {
 }
 
 .main-photos {
-    float: left;
     background-color: rgb(219, 217, 217);
     padding: 10px; 
     margin: 10px; 
     color: rgb(58, 1, 58);
+}
+
+.pic {
+    width: 100%; 
+}
+
+@media screen and (max-width:750px) {
+    .main-photos-wrapper {display: block; }
 }
