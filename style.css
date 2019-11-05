@@ -13,6 +13,7 @@ html, body {
     height: auto; 
     margin: 20px; 
     align-content: center; 
+    float: left;
 }
 
 /* --------- Menu bar ----------- */
@@ -56,6 +57,10 @@ html, body {
 
 .topnav .icon {
     display: none; 
+}
+
+.mytopnav {
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -184,20 +189,10 @@ html, body {
     height: auto;
 }
 
-/* .picbig {
-    position: absolute; 
-    width: 0px; 
-    -webkit-transition: width 0.3s linear 0s; 
-    transition: width 0.3s linear 0s; 
-    z-index: 10; 
-}
-
-.pic:hover + .picbig {
-    width: 600px; 
-    text-align: center; 
-} */
-
 /* ------------- material ------------ */
+form {
+    width: 80%;
+}
 #material-heading {
     text-align: center; 
     margin-top: 100px; 
