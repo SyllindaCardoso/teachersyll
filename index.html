@@ -7,7 +7,8 @@
     <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Farsan&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="all.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
     <title>teachersyll</title>
 </head>
 <body>
@@ -45,6 +46,8 @@
             <p id="profession">I'm a Vancouver-based<br> English teacher. </p>
         </div>
     </div>
+    <!-- <a id="go-to-top" onclick="topFunction()"><i id="myBtn" class="fas fa-arrow-circle-up"></i>Top</a> -->
+    <i onclick="topFunction()" id="myBtn" class="go-to-top">Top</i>
 
     <!-------------- about me ------------>
     <div id="about-me"> </div>
@@ -132,6 +135,30 @@
             document.body.style.marginLeft = "0";
         }
     </script>
+    
+    <script>
+        //Get the button up:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+    <!------------------ Footer -------------->
     <footer>
         <div class="footer-contact">
             <p id="phone">cell phone (778) 751-4211</p>
