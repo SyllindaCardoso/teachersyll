@@ -69,11 +69,9 @@ html, body {
 }
 
 @media screen and (max-width: 481px) {
-    .topnav.responsive { position: relative;}
+    /* .topnav.responsive { position: relative;} */
     .topnav.responsive .icon {
-        position: absolute; 
-        right: 0;
-        top: 0; 
+        display: none;
     }
     .topnav {
         display: flex;
